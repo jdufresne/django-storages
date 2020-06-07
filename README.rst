@@ -97,12 +97,28 @@ Documentation for django-storages is located at https://django-storages.readthed
 Contributing
 ============
 
-#. `Check for open issues
-   <https://github.com/jschneier/django-storages/issues>`_ at the project
-   issue page or open a new issue to start a discussion about a feature or bug.
-#. Fork the `django-storages repository on GitHub
-   <https://github.com/jschneier/django-storages>`_ to start making changes.
-#. Add a test case to show that the bug is fixed or the feature is implemented
-   correctly.
-#. Bug me until I can merge your pull request. Also, don't forget to add
-   yourself to ``AUTHORS``.
+First, `Check for open issues
+<https://github.com/jschneier/django-storages/issues>`_ at the project issue
+page or open a new issue to start a discussion about a feature or bug.
+
+Next, fork the `django-storages repository on GitHub
+<https://github.com/jschneier/django-storages>`_ to start making changes.
+
+After adding a feature or fixing a bug, add a test case to show that it is
+implemented correctly.
+
+Format the code using black and isort:
+
+.. code-block:: console
+
+    $ black --target-version py35 .
+    $ isort --apply .
+
+Run the full test suite using tox:
+
+.. code-block:: console
+
+    $ tox
+
+Bug me until I can merge your pull request. Also, don't forget to add yourself
+to ``AUTHORS``.
